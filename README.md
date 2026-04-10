@@ -49,7 +49,7 @@ functional coverage, and a self-checking scoreboard — all running concurrently
 
 ---
 
-## RTL — DUT Descriptions
+## RTL - DUT Descriptions
 
 ### SPI DUT (`spi_dut.sv`)
 Simple loopback: on every rising edge of `sclk`, if `cs_n` is low, `miso` is registered from `mosi`.
@@ -135,7 +135,7 @@ endproperty
 
 ## Functional Coverage Model
 
-### SPI — `spi_cg` (in `spi_monitor`)
+### SPI - `spi_cg` (in `spi_monitor`)
 
 | Coverpoint | Bins | Description |
 |------------|------|-------------|
@@ -143,7 +143,7 @@ endproperty
 |            | `mid [0x20–0xDF]` | Mid-range values |
 |            | `high [0xE0–0xFF]` | High byte values |
 
-### UART — `uart_cg` (in `uart_monitor`)
+### UART -  `uart_cg` (in `uart_monitor`)
 
 | Coverpoint | Bins | Description |
 |------------|------|-------------|
@@ -155,7 +155,7 @@ fill the `mid` bin. Target: **≥80% coverage** across both covergroups.
 
 ---
 
-## Scoreboard — Self-Checking Design
+## Scoreboard - Self-Checking Design
 
 **SPI:** The monitor performs an inline loopback check (`last_rx !== last_tx → UVM_ERROR`).
 The scoreboard receives passing transactions and maintains a `spi_pass` counter for the report.
@@ -172,7 +172,7 @@ UVM_INFO SB: UART pass=14 fail=0
 
 ---
 
-## Simulation — Quick Start (Questa)
+## Simulation -  Quick Start (Questa)
 
 ```tcl
 # Compile and run in one step
