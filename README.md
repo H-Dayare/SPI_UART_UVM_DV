@@ -2,7 +2,7 @@
 
 A dual-protocol verification project implementing SPI and UART DUTs in SystemVerilog, verified
 with a shared UVM environment featuring two independent agents, protocol-level SVA assertions,
-functional coverage, and a self-checking scoreboard — all running concurrently in a single test.
+functional coverage, and a self-checking scoreboard all running concurrently in a single test.
 
 ---
 
